@@ -12,7 +12,7 @@
 		236ED96A1BFC0DA0004280C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236ED9681BFC0DA0004280C6 /* Main.storyboard */; };
 		236ED96C1BFC0DA0004280C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236ED96B1BFC0DA0004280C6 /* Assets.xcassets */; };
 		236ED96F1BFC0DA0004280C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236ED96D1BFC0DA0004280C6 /* LaunchScreen.storyboard */; };
-		239BB9891C053FDF00E6677A /* customcell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BB9881C053FDF00E6677A /* customcell1.swift */; };
+		239BB9891C053FDF00E6677A /* customcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BB9881C053FDF00E6677A /* customcell.swift */; };
 		239BB98B1C0541B900E6677A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BB98A1C0541B900E6677A /* DetailViewController.swift */; };
 		239BB98D1C0541D500E6677A /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BB98C1C0541D500E6677A /* AddViewController.swift */; };
 		239BB98F1C05483300E6677A /* recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239BB98E1C05483300E6677A /* recipe.swift */; };
@@ -27,7 +27,7 @@
 		236ED96B1BFC0DA0004280C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236ED96E1BFC0DA0004280C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		236ED9701BFC0DA0004280C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		239BB9881C053FDF00E6677A /* customcell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customcell1.swift; sourceTree = "<group>"; };
+		239BB9881C053FDF00E6677A /* customcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customcell.swift; sourceTree = "<group>"; };
 		239BB98A1C0541B900E6677A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		239BB98C1C0541D500E6677A /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		239BB98E1C05483300E6677A /* recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recipe.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 				236ED96B1BFC0DA0004280C6 /* Assets.xcassets */,
 				236ED96D1BFC0DA0004280C6 /* LaunchScreen.storyboard */,
 				236ED9701BFC0DA0004280C6 /* Info.plist */,
-				239BB9881C053FDF00E6677A /* customcell1.swift */,
+				239BB9881C053FDF00E6677A /* customcell.swift */,
 				239BB98A1C0541B900E6677A /* DetailViewController.swift */,
 				239BB98C1C0541D500E6677A /* AddViewController.swift */,
 				239BB98E1C05483300E6677A /* recipe.swift */,
@@ -152,7 +152,7 @@
 			files = (
 				239BB98D1C0541D500E6677A /* AddViewController.swift in Sources */,
 				236ED9671BFC0DA0004280C6 /* ViewController.swift in Sources */,
-				239BB9891C053FDF00E6677A /* customcell1.swift in Sources */,
+				239BB9891C053FDF00E6677A /* customcell.swift in Sources */,
 				239BB98F1C05483300E6677A /* recipe.swift in Sources */,
 				239BB9911C05489500E6677A /* RecipeManager.swift in Sources */,
 				236ED9651BFC0DA0004280C6 /* AppDelegate.swift in Sources */,
