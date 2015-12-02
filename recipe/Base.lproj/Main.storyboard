@@ -125,7 +125,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="bUa-Wm-GvS"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -148,6 +147,9 @@
                                 <state key="normal" title="Add">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addButton_click:" destination="X9B-rk-kB5" eventType="touchUpInside" id="8Cw-zH-Rww"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -173,7 +175,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Recipe" id="dbb-FI-DNE">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ynX-Or-QlF">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="ynX-Or-QlF">
                             <connections>
                                 <action selector="doneButtonClicked:" destination="X9B-rk-kB5" id="95X-hi-d0A"/>
                             </connections>
@@ -181,6 +183,8 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="addButton" destination="thQ-Pj-A7t" id="2cA-qo-xc1"/>
+                        <outlet property="doneButton" destination="ynX-Or-QlF" id="VI9-UN-zsg"/>
                         <outlet property="recipeContent" destination="25L-oF-S2T" id="Eh2-VG-yBK"/>
                         <outlet property="titleText" destination="lwT-In-f4f" id="wl3-Mj-Th4"/>
                     </connections>
@@ -209,7 +213,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2" width="736" height="1308"/>
-        <image name="3" width="640" height="1136"/>
+        <image name="2" width="164" height="307"/>
+        <image name="3" width="168" height="299"/>
     </resources>
 </document>

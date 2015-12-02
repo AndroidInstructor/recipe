@@ -10,7 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    var preRecipe:String?
+    var preRecipe:recipe?
 
     @IBOutlet weak var recipeContent: UITextView!
     override func viewDidLoad() {
@@ -20,7 +20,7 @@ class DetailViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.title = preRecipe;
+        self.title = preRecipe?.title;
     }
 
     override func didReceiveMemoryWarning() {

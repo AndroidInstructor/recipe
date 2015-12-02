@@ -21,6 +21,7 @@ class ViewController: UITableViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        tableView.reloadData()
         
         navigationController?.navigationBar.alpha = 0.5
     }
@@ -31,10 +32,15 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return array.count
+        return RecipeManager.recipes.count
         
     }
-    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if(editingStyle == .Delete){
+            RecipeManager.DeleteRecipe(indexPath.item)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        }
+    }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("customcell")! as! customcell
         
@@ -45,9 +51,10 @@ class ViewController: UITableViewController {
             cell.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.2)
             cell.textLabel?.backgroundColor = UIColor.whiteColor().colorWithAlphaComponent(0.0)
         }
+        let recipe = RecipeManager.recipes[indexPath.item]
         cell.textLabel?.textColor = UIColor.whiteColor()
-        cell.textLabel?.text = array[indexPath.item]
-        cell.Recipe = cell.textLabel?.text
+        cell.textLabel?.text = recipe.title
+        cell.Recipe = recipe
         return cell
     }
     
